@@ -247,11 +247,12 @@
             letter-spacing: -1.2px;
         }
 
-        .hero h1 .gradient-text {
-            background: linear-gradient(135deg, var(--accent-primary) 0%, #60a5fa 50%, #a78bfa 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+      .hero h1 .gradient-text {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, #60a5fa 50%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
         .hero p {
             color: var(--text-muted);
@@ -823,7 +824,7 @@
             }
 
             .form-control {
-                font-size: 16px; /* Évite le zoom automatique sur iPhone lors de la saisie */
+                font-size: 16px; /* evite le zoom automatique sur iPhone lors de la saisie */
                 padding: 14px;
             }
 
@@ -847,7 +848,7 @@
                 padding: 22px;
             }
 
-            /* DOCK FLOTTANT EN BAS FAÇON APPLICATION NATIVE */
+            /* DOCK FLOTTANT EN BAS FAcON APPLICATION NATIVE */
             .mobile-app-dock {
                 display: flex;
                 justify-content: space-around;
@@ -889,7 +890,7 @@
                 color: var(--accent-primary);
             }
 
-            /* Bouton central WhatsApp surélevé dans le Dock */
+           
             .dock-wa-center {
                 position: relative;
                 top: -14px;
@@ -916,7 +917,7 @@
 </head>
 <body>
 
-    <!-- HEADER -->
+    
     <header>
         <div class="container nav-container">
             <a href="#accueil" class="brand-logo">
@@ -946,11 +947,11 @@
                     <span>Liaison Directe Guangzhou &rarr; Brazzaville</span>
                 </div>
                 <h1>Achettez sur place et Importez directement depuis <span class="gradient-text">les usines de Chine</span> en toute sécurité.</h1>
-                <p>Hiram Web accompagne les particuliers, commerçants et entrepreneurs dans leurs achats sur Pinduoduo, 1688, Taobao et Alibaba. Établissez votre contrat en ligne et suivez votre expédition sur WhatsApp.</p>
+                <p>Hiram Web accompagne les particuliers, commercants et entrepreneurs dans leurs achats sur Pinduoduo, 1688, Taobao et Alibaba. Établissez votre contrat en ligne et suivez votre expédition sur WhatsApp.</p>
                 
                 <div class="hero-btns">
                     <a href="#commande-chine" class="btn btn-primary">
-                        <i class="fa-solid fa-file-signature"></i> Établir un Contrat Chine
+                        <i class="fa-solid fa-file-signature"></i> etablir un Contrat Chine
                     </a>
                     <button onclick="openDirectChinaWhatsApp()" class="btn btn-whatsapp">
                         <i class="fa-brands fa-whatsapp" style="font-size: 1.25rem;"></i> Discuter sur WhatsApp
@@ -962,7 +963,7 @@
             <div class="hero-visual">
                 <div class="route-header">
                     <span style="font-weight: 700; font-size: 0.9rem;"><i class="fa-solid fa-satellite-dish" style="color: var(--accent-primary);"></i> Corridor Logistique Actif</span>
-                    <span class="route-badge">Transit Sécurisé</span>
+                    <span class="route-badge">Transit Securise</span>
                 </div>
 
                 <div class="route-visual-bar">
@@ -990,8 +991,8 @@
                 <div class="stat-item">
                     <div class="stat-icon"><i class="fa-solid fa-warehouse"></i></div>
                     <div class="stat-info">
-                        <h4>Réception & Contrôle Entrepôt</h4>
-                        <p>Vérification de vos colis à Guangzhou avant expédition.</p>
+                        <h4>Reception & Controle Entrepot</h4>
+                        <p>Verification de vos colis a Guangzhou avant expedition.</p>
                     </div>
                 </div>
                 <div class="stat-item">
@@ -1005,7 +1006,6 @@
         </div>
     </section>
 
-    <!-- BANDEAU PLATEFORMES CHINOISES (SWIPEABLE SUR MOBILE) -->
     <div class="platforms-strip">
         <div class="container platforms-flex">
             <span class="platforms-label">Sourcing sur toutes les plateformes :</span>
@@ -1019,23 +1019,22 @@
         </div>
     </div>
 
-    <!-- SECTION COMMANDE EN CHINE & CONTRAT -->
     <section id="commande-chine" class="section">
         <div class="container china-wrapper">
             <div>
                 <div class="live-status-pill" style="margin-bottom: 16px;">
                     <i class="fa-solid fa-ship" style="color: var(--accent-primary);"></i>
-                    <span>Processus d'Importation Clé en Main</span>
+                    <span>Processus d'Importation Cle en Main</span>
                 </div>
                 <h2 style="font-size: clamp(1.85rem, 3.5vw, 2.5rem); font-weight: 900; line-height: 1.2; margin-bottom: 16px;">Comment lancer votre commande en Chine ?</h2>
-                <p style="color: var(--text-muted);">Que vous souhaitiez commander un article précis ou approvisionner votre boutique en gros, notre équipe gère l'achat auprès du fournisseur, le groupage et la douane jusqu'à Brazzaville.</p>
+                <p style="color: var(--text-muted);">Que vous souhaitiez commander un article precis ou approvisionner votre boutique en gros, notre équipe gère l'achat auprès du fournisseur, le groupage et la douane jusqu'à Brazzaville.</p>
 
                 <div class="china-steps">
                     <div class="step-card">
                         <div class="step-num">1</div>
                         <div>
                             <h4>Partagez le produit ou le lien</h4>
-                            <p style="font-size: 0.88rem; color: var(--text-muted);">Indiquez-nous l'article recherché, une capture d'écran ou le lien fournisseur avec la quantité.</p>
+                            <p style="font-size: 0.88rem; color: var(--text-muted);">Indiquez-nous l'article recherche, une capture d'écran ou le lien fournisseur avec la quantité.</p>
                         </div>
                     </div>
                     <div class="step-card">
@@ -1048,8 +1047,8 @@
                     <div class="step-card">
                         <div class="step-num">3</div>
                         <div>
-                            <h4>Expédition & Réception à Brazzaville</h4>
-                            <p style="font-size: 0.88rem; color: var(--text-muted);">Suivi régulier de l'acheminement jusqu'à la remise de votre marchandise.</p>
+                            <h4>Expedition & Reception a Brazzaville</h4>
+                            <p style="font-size: 0.88rem; color: var(--text-muted);">Suivi regulier de l'acheminement jusqu'a a la remise de votre marchandise.</p>
                         </div>
                     </div>
                 </div>
@@ -1059,38 +1058,37 @@
                 </button>
             </div>
 
-            <!-- Formulaire Générateur de Contrat WhatsApp -->
             <div class="china-contract-box">
-                <h3><i class="fa-solid fa-file-contract" style="color: var(--accent-primary);"></i> Préparer mon Contrat</h3>
-                <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 22px;">Remplissez ces informations pour transmettre instantanément votre dossier de commande sur notre WhatsApp.</p>
+                <h3><i class="fa-solid fa-file-contract" style="color: var(--accent-primary);"></i> Preparer mon Contrat</h3>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 22px;">Remplissez ces informations pour transmettre instantanement votre dossier de commande sur notre WhatsApp.</p>
 
                 <form id="china-form" onsubmit="submitChinaContract(event)">
                     <div class="form-group">
-                        <label>Nom & Prénom ou Entreprise *</label>
+                        <label>Nom & Prenom ou Entreprise *</label>
                         <input type="text" id="china-name" class="form-control" placeholder="Ex: Mberi Prince / Boutique..." required>
                     </div>
                     <div class="form-group">
                         <label>Article(s) ou Lien(s) fournisseur *</label>
-                        <input type="text" id="china-product" class="form-control" placeholder="Ex: 20 rubans LED, accessoires téléphone, lien..." required>
+                        <input type="text" id="china-product" class="form-control" placeholder="Ex: 20 rubans LED, accessoires teléphone, lien..." required>
                     </div>
                     <div class="form-group">
-                        <label>Quantité estimée *</label>
-                        <input type="text" id="china-qty" class="form-control" placeholder="Ex: 10 pièces / 2 cartons..." required>
+                        <label>Quantite estimee *</label>
+                        <input type="text" id="china-qty" class="form-control" placeholder="Ex: 10 pieces / 2 cartons..." required>
                     </div>
                     <div class="form-group">
-                        <label>Option de Transit souhaitée</label>
+                        <label>Option de Transit souhaitee</label>
                         <select id="china-shipping" class="form-control">
-                            <option value="Cargo Aérien Express (7 à 14 jours)">Cargo Aérien Express (7 à 14 jours)</option>
-                            <option value="Cargo Maritime (45 à 60 jours - Gros volumes)">Cargo Maritime (45 à 60 jours - Gros volumes)</option>
-                            <option value="À conseiller selon le poids">À conseiller selon le poids</option>
+                            <option value="Cargo Aerien Express (7 a 14 jours)">Cargo Aerien Express (7 e 14 jours)</option>
+                            <option value="Cargo Maritime (45 a 60 jours - Gros volumes)">Cargo Maritime (45 a 60 jours - Gros volumes)</option>
+                            <option value="a conseiller selon le poids">a conseiller selon le poids</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Précisions supplémentaires (Optionnel)</label>
-                        <textarea id="china-notes" rows="2" class="form-control" placeholder="Couleurs, modèles, budget cible..."></textarea>
+                        <label>Precisions supplementaires (Optionnel)</label>
+                        <textarea id="china-notes" rows="2" class="form-control" placeholder="Couleurs, modeles, budget cible..."></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1rem;">
-                        <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Générer & Envoyer sur WhatsApp
+                        <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Generer & Envoyer sur WhatsApp
                     </button>
                 </form>
             </div>
@@ -1102,24 +1100,24 @@
         <div class="container">
             <div style="text-align: center; max-width: 650px; margin: 0 auto 36px;">
                 <h2 style="font-size: clamp(1.7rem, 3vw, 2.3rem); font-weight: 800; margin-bottom: 10px;">Pourquoi choisir <span style="color: var(--accent-primary);">Hiram Web</span> ?</h2>
-                <p style="color: var(--text-muted); font-size: 0.95rem;">Une structure pensée pour éliminer les risques liés aux achats internationaux.</p>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Une structure pensee pour eliminer les risques lies aux achats internationaux.</p>
             </div>
 
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h4>Sécurité Contractuelle</h4>
-                    <p>Chaque commande fait l'objet d'un accord clair détaillant les quantités, le coût global et les engagements de livraison.</p>
+                    <h4>Securite Contractuelle</h4>
+                    <p>Chaque commande fait l'objet d'un accord clair detaillant les quantites, le cout global et les engagements de livraison.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon"><i class="fa-solid fa-magnifying-glass-dollar"></i></div>
                     <h4>Prix Direct Fournisseur</h4>
-                    <p>Accédez aux tarifs réels des plateformes chinoises sans intermédiaires inutiles pour maximiser vos marges.</p>
+                    <p>Accedez aux tarifs reels des plateformes chinoises sans intermediaires inutiles pour maximiser vos marges.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
-                    <h4>Suivi Réactif par WhatsApp</h4>
-                    <p>Un interlocuteur unique disponible au +242 06 842 46 24 pour vous informer à chaque étape du transit.</p>
+                    <h4>Suivi Reactif par WhatsApp</h4>
+                    <p>Un interlocuteur unique disponible au +242 06 842 46 24 pour vous informer a chaque etape du transit.</p>
                 </div>
             </div>
         </div>
@@ -1134,7 +1132,7 @@
                         <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
                         Hiram <span>Web</span>
                     </a>
-                    <p>Votre partenaire de confiance à Brazzaville pour le sourcing, l'achat en Chine et l'acheminement sécurisé de vos marchandises.</p>
+                    <p>Votre partenaire de confiance a Brazzaville pour le sourcing, l'achat en Chine et l'acheminement securise de vos marchandises.</p>
                 </div>
 
                 <div class="footer-col">
@@ -1150,14 +1148,14 @@
                     <h4>Contact Direct</h4>
                     <ul>
                         <li><i class="fa-brands fa-whatsapp" style="color: var(--accent-whatsapp);"></i> WhatsApp : <strong>+242 06 842 46 24</strong></li>
-                        <li><i class="fa-solid fa-location-dot" style="color: var(--accent-primary);"></i> Brazzaville, République du Congo</li>
+                        <li><i class="fa-solid fa-location-dot" style="color: var(--accent-primary);"></i> Brazzaville, Republique du Congo</li>
                         <li><i class="fa-solid fa-clock" style="color: var(--accent-primary);"></i> Lun - Sam : 08h00 - 20h00</li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                &copy; <span id="year"></span> <strong>Hiram Web</strong>. Tous droits réservés.
+                &copy; <span id="year"></span> <strong>Hiram Web</strong>. Tous droits reseres.
             </div>
         </div>
     </footer>
@@ -1198,7 +1196,7 @@
 
         // Contact direct pour contrat Chine
         function openDirectChinaWhatsApp() {
-            const msg = `🇨🇳 *DEMANDE DE CONTRAT DE COMMANDE CHINE - HIRAM WEB*\n\nBonjour Hiram Web, je souhaite passer une commande en Chine et établir un contrat avec vous.`;
+            const msg = `cn *DEMANDE DE CONTRAT DE COMMANDE CHINE - HIRAM WEB*\n\nBonjour Hiram Web, je souhaite passer une commande en Chine et etablir un contrat avec vous.`;
             const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
             window.open(url, '_blank');
         }
@@ -1210,29 +1208,27 @@
             const product = document.getElementById('china-product').value.trim();
             const qty = document.getElementById('china-qty').value.trim();
             const shipping = document.getElementById('china-shipping').value;
-            const notes = document.getElementById('china-notes').value.trim() || "Aucune précision supplémentaire";
+            const notes = document.getElementById('china-notes').value.trim() || "Aucune precision supplementaire";
 
             let msg = `🇨🇳 *NOUVEAU DOSSIER CONTRAT CHINE - HIRAM WEB*\n`;
             msg += `━━━━━━━━━━━━━━━━━━━━\n`;
             msg += `👤 *Client :* ${name}\n`;
             msg += `📦 *Produit(s) :* ${product}\n`;
-            msg += `🔢 *Quantité :* ${qty}\n`;
-            msg += `✈️ *Transit souhaité :* ${shipping}\n`;
-            msg += `📝 *Détails :* ${notes}\n`;
-            msg += `━━━━━━━━━━━━━━━━━━━━\n`;
-            msg += `Merci de m'établir le devis et le contrat de commande.`;
+            msg += `🔢 *Quantite :* ${qty}\n`;
+            msg += `✈️ *Transit souhaite :* ${shipping}\n`;
+            msg += `📝 *Details :* ${notes}\n`;
+            msg += `━━━━━━━━━━━━━━━━━━━\n`;
+            msg += `Merci de m'etablir le devis et le contrat de commande.`;
 
             const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
             window.open(url, '_blank');
         }
 
-        // Gestion de l'état actif sur la barre mobile
         function setActiveDock(element) {
             document.querySelectorAll('.dock-item').forEach(item => item.classList.remove('active'));
             element.classList.add('active');
         }
 
-        // Année dynamique dans le footer
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
