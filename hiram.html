@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hiram Web | Sourcing Direct Chine & Transit - Brazzaville</title>
+    <meta name="description" content="Lancez vos importations directes depuis la Chine avec Hiram Web. Sourcing usine, contrat sécurisé et transit rapide vers Brazzaville.">
+    <meta name="theme-color" content="#050811">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        /* =========================================
+           VARIABLES & RESET (DESIGN SYSTEM PRO)
+        ========================================= */
+        :root {
+            --bg-primary: #050811;
+            --bg-secondary: #0b1121;
+            --bg-card: rgba(15, 23, 42, 0.65);
+            --bg-glass: rgba(8, 12, 24, 0.82);
+            --accent-primary: #00f0ff;
+            --accent-secondary: #3b82f6;
+            --accent-purple: #8b5cf6;
+            --accent-whatsapp: #25D366;
+            --accent-whatsapp-hover: #1ebe5d;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-glass: rgba(255, 255, 255, 0.08);
+            --border-glow: rgba(0, 240, 255, 0.35);
+            --shadow-card: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+            --radius-xl: 24px;
+            --radius-lg: 18px;
+            --radius-md: 14px;
+            --transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 10%, rgba(0, 240, 255, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 35%, rgba(139, 92, 246, 0.08) 0%, transparent 45%),
+                radial-gradient(circle at 50% 85%, rgba(59, 130, 246, 0.07) 0%, transparent 50%);
+        }
+
+        /* Grille architecturale subtile en arrière-plan */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        h1, h2, h3, h4, .brand-logo {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* =========================================
+           HEADER & NAVIGATION DESKTOP
+        ========================================= */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: var(--bg-glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-glass);
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 76px;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.55rem;
+            font-weight: 900;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #050811;
+            font-size: 1.2rem;
+            box-shadow: 0 0 25px rgba(0, 240, 255, 0.4);
+        }
+
+        .brand-logo span {
+            color: var(--accent-primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 36px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--text-main);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-primary);
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        .nav-links a:hover::after, .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-cta-desktop {
+            background: rgba(0, 240, 255, 0.1);
+            border: 1px solid var(--border-glow);
+            color: var(--accent-primary);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .nav-cta-desktop:hover {
+            background: var(--accent-primary);
+            color: #050811;
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.35);
+        }
+
+        /* =========================================
+           HERO SECTION
+        ========================================= */
+        .hero {
+            padding: 145px 0 80px;
+            position: relative;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .live-status-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px solid var(--border-glow);
+            color: var(--text-main);
+            padding: 7px 16px;
+            border-radius: 50px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 20px rgba(0, 240, 255, 0.12);
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background: #25D366;
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            animation: pulseGreen 2s infinite;
+        }
+
+        @keyframes pulseGreen {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(37, 211, 102, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        .hero h1 {
+            font-size: clamp(2.3rem, 4.5vw, 3.8rem);
+            font-weight: 900;
+            line-height: 1.12;
+            margin-bottom: 20px;
+            letter-spacing: -1.2px;
+        }
+
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, var(--accent-primary) 0%, #60a5fa 50%, #a78bfa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 1.08rem;
+            margin-bottom: 32px;
+            max-width: 560px;
+        }
+
+        .hero-btns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 28px;
+            border-radius: var(--radius-md);
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            color: #050811;
+            box-shadow: 0 10px 25px rgba(0, 240, 255, 0.28);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0, 240, 255, 0.45);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: #fff;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.28);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.45);
+        }
+
+        /* Hero Carte Logistique Interactive */
+        .hero-visual {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-xl);
+            padding: 30px;
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            box-shadow: var(--shadow-card);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-visual::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-primary), var(--accent-purple), transparent);
+        }
+
+        .route-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 18px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-glass);
+        }
+
+        .route-badge {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            background: rgba(0, 240, 255, 0.1);
+            padding: 4px 12px;
+            border-radius: 50px;
+        }
+
+        .route-visual-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(5, 8, 17, 0.65);
+            padding: 16px 20px;
+            border-radius: var(--radius-md);
+            margin-bottom: 20px;
+            border: 1px solid var(--border-glass);
+        }
+
+        .city-node {
+            text-align: center;
+        }
+
+        .city-code {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: var(--text-main);
+        }
+
+        .city-name {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .flight-track {
+            flex-grow: 1;
+            margin: 0 16px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flight-line {
+            width: 100%;
+            height: 2px;
+            background: repeating-linear-gradient(90deg, var(--accent-primary) 0, var(--accent-primary) 6px, transparent 6px, transparent 12px);
+            opacity: 0.6;
+        }
+
+        .flight-track i {
+            position: absolute;
+            color: var(--accent-primary);
+            background: #080d1d;
+            padding: 0 8px;
+            font-size: 1.1rem;
+            animation: flyPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes flyPulse {
+            0%, 100% { transform: translateX(-8px); }
+            50% { transform: translateX(8px); }
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 14px 16px;
+            background: rgba(5, 8, 17, 0.5);
+            border-radius: var(--radius-md);
+            margin-bottom: 12px;
+            border: 1px solid var(--border-glass);
+            transition: var(--transition);
+        }
+
+        .stat-item:hover {
+            border-color: var(--border-glow);
+            transform: translateX(4px);
+        }
+
+        .stat-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .stat-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: rgba(0, 240, 255, 0.1);
+            color: var(--accent-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .stat-info h4 {
+            font-size: 0.98rem;
+            margin-bottom: 2px;
+        }
+
+        .stat-info p {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* =========================================
+           PLATEFORMES SUPPORTÉES (BARRE TECH)
+        ========================================= */
+        .platforms-strip {
+            padding: 28px 0;
+            border-top: 1px solid var(--border-glass);
+            border-bottom: 1px solid var(--border-glass);
+            background: rgba(11, 17, 33, 0.5);
+        }
+
+        .platforms-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .platforms-label {
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: var(--text-muted);
+            font-weight: 700;
+        }
+
+        .platform-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .platform-pill {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-glass);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .platform-pill i {
+            color: var(--accent-primary);
+        }
+
+        /* =========================================
+           SECTION COMMANDE EN CHINE & CONTRAT
+        ========================================= */
+        .section {
+            padding: 90px 0;
+        }
+
+        .china-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: start;
+        }
+
+        .china-steps {
+            display: grid;
+            gap: 18px;
+            margin: 28px 0;
+        }
+
+        .step-card {
+            display: flex;
+            gap: 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            padding: 20px;
+            border-radius: var(--radius-lg);
+            transition: var(--transition);
+        }
+
+        .step-card:hover {
+            border-color: var(--border-glow);
+            background: rgba(20, 30, 58, 0.8);
+        }
+
+        .step-num {
+            width: 38px;
+            height: 38px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            color: #050811;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .china-contract-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glow);
+            border-radius: var(--radius-xl);
+            padding: 36px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            position: relative;
+        }
+
+        .china-contract-box h3 {
+            font-size: 1.55rem;
+            margin-bottom: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #cbd5e1;
+        }
+
+        .form-control {
+            width: 100%;
+            background: rgba(5, 8, 17, 0.8);
+            border: 1px solid var(--border-glass);
+            color: var(--text-main);
+            padding: 14px 16px;
+            border-radius: var(--radius-md);
+            font-family: inherit;
+            font-size: 0.95rem;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px rgba(0, 240, 255, 0.15);
+        }
+
+        /* =========================================
+           GARANTIES & AVANTAGES
+        ========================================= */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--border-glow);
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, rgba(0, 240, 255, 0.15), rgba(59, 130, 246, 0.15));
+            border: 1px solid var(--border-glow);
+            color: var(--accent-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.35rem;
+            margin-bottom: 18px;
+        }
+
+        .feature-card h4 {
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* =========================================
+           FOOTER & DESKTOP FLOATING WHATSAPP
+        ========================================= */
+        footer {
+            padding: 60px 0 36px;
+            background: #03050b;
+            border-top: 1px solid var(--border-glass);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        .footer-col p, .footer-col li {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-glass);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .floating-wa {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 62px;
+            height: 62px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.9rem;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.45);
+            z-index: 999;
+            transition: var(--transition);
+        }
+
+        .floating-wa:hover {
+            transform: scale(1.1) rotate(6deg);
+        }
+
+        /* Barre App Native Mobile (cachée sur PC, spectaculaire sur téléphone) */
+        .mobile-app-dock {
+            display: none;
+        }
+
+        /* =========================================
+           EXPÉRIENCE MOBILE ULTRA-PREMIUM ("WHAOU")
+        ========================================= */
+        @media (max-width: 900px) {
+            body {
+                padding-bottom: 92px; /* Espace pour le dock mobile flottant */
+            }
+
+            .container {
+                padding: 0 18px;
+            }
+
+            /* Header compact façon App iOS/Android */
+            .nav-container {
+                height: 64px;
+            }
+
+            .brand-logo {
+                font-size: 1.35rem;
+            }
+
+            .logo-icon {
+                width: 36px;
+                height: 36px;
+                font-size: 1rem;
+            }
+
+            .nav-links, .nav-cta-desktop, .floating-wa {
+                display: none !important;
+            }
+
+            /* Hero Mobile percutant */
+            .hero {
+                padding: 94px 0 44px;
+            }
+
+            .hero-grid, .china-wrapper, .footer-grid, .features-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
+            .hero h1 {
+                font-size: 2.15rem;
+                line-height: 1.15;
+                margin-bottom: 14px;
+            }
+
+            .hero p {
+                font-size: 0.96rem;
+                margin-bottom: 24px;
+            }
+
+            .hero-btns {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .hero-btns .btn {
+                width: 100%;
+                padding: 16px 20px;
+                font-size: 1rem;
+                border-radius: 16px;
+            }
+
+            /* Carte Logistique Mobile façon Billet d'embarquement / Dashboard */
+            .hero-visual {
+                padding: 20px;
+                border-radius: 22px;
+                background: linear-gradient(160deg, rgba(17, 25, 48, 0.9), rgba(8, 12, 24, 0.95));
+                border: 1px solid rgba(0, 240, 255, 0.25);
+            }
+
+            .route-visual-bar {
+                padding: 14px 12px;
+            }
+
+            .city-code {
+                font-size: 1.2rem;
+            }
+
+            /* Carrousel horizontal tactile (Swipe) pour les plateformes sur mobile */
+            .platforms-strip {
+                padding: 18px 0;
+            }
+
+            .platforms-flex {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .platform-pills {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                width: 100%;
+                padding-bottom: 6px;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+
+            .platform-pills::-webkit-scrollbar {
+                display: none;
+            }
+
+            .platform-pill {
+                flex-shrink: 0;
+                padding: 8px 16px;
+                font-size: 0.85rem;
+                background: rgba(15, 23, 42, 0.9);
+            }
+
+            /* Sections & Formulaire mobile ergonomique */
+            .section {
+                padding: 50px 0;
+            }
+
+            .china-contract-box {
+                padding: 24px 20px;
+                border-radius: 22px;
+            }
+
+            .form-control {
+                font-size: 16px; /* Évite le zoom automatique sur iPhone lors de la saisie */
+                padding: 14px;
+            }
+
+            /* Carrousel tactile horizontal pour les garanties sur mobile */
+            .features-grid {
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                gap: 16px;
+                padding-bottom: 10px;
+                scrollbar-width: none;
+            }
+
+            .features-grid::-webkit-scrollbar {
+                display: none;
+            }
+
+            .feature-card {
+                min-width: 82%;
+                scroll-snap-align: center;
+                padding: 22px;
+            }
+
+            /* DOCK FLOTTANT EN BAS FAÇON APPLICATION NATIVE */
+            .mobile-app-dock {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                position: fixed;
+                bottom: 14px;
+                left: 14px;
+                right: 14px;
+                height: 68px;
+                background: rgba(10, 15, 30, 0.88);
+                backdrop-filter: blur(24px);
+                -webkit-backdrop-filter: blur(24px);
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                border-radius: 24px;
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.85), 0 0 20px rgba(0, 240, 255, 0.12);
+                z-index: 1500;
+                padding: 0 8px;
+            }
+
+            .dock-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: var(--text-muted);
+                font-size: 0.7rem;
+                font-weight: 600;
+                gap: 4px;
+                flex: 1;
+                height: 100%;
+                transition: var(--transition);
+            }
+
+            .dock-item i {
+                font-size: 1.15rem;
+            }
+
+            .dock-item.active, .dock-item:active {
+                color: var(--accent-primary);
+            }
+
+            /* Bouton central WhatsApp surélevé dans le Dock */
+            .dock-wa-center {
+                position: relative;
+                top: -14px;
+                width: 58px;
+                height: 58px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #25D366, #128C7E);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.65rem;
+                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+                border: 3px solid #050811;
+                flex-shrink: 0;
+                transition: transform 0.2s ease;
+            }
+
+            .dock-wa-center:active {
+                transform: scale(0.92);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container nav-container">
+            <a href="#accueil" class="brand-logo">
+                <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+                Hiram <span>Web</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#accueil" class="active">Accueil</a>
+                <a href="#commande-chine">Commander en Chine</a>
+                <a href="#garanties">Nos Garanties</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="https://wa.me/242068424624?text=Bonjour%20Hiram%20Web%2C%20je%20souhaite%20lancer%20une%20commande%20en%20Chine." target="_blank" class="nav-cta-desktop">
+                <i class="fa-brands fa-whatsapp"></i> +242 06 842 46 24
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="accueil" class="hero">
+        <div class="container hero-grid">
+            <div>
+                <div class="live-status-pill">
+                    <span class="pulse-dot"></span>
+                    <span>Liaison Directe Guangzhou &rarr; Brazzaville</span>
+                </div>
+                <h1>Achettez sur place et Importez directement depuis <span class="gradient-text">les usines de Chine</span> en toute sécurité.</h1>
+                <p>Hiram Web accompagne les particuliers, commerçants et entrepreneurs dans leurs achats sur Pinduoduo, 1688, Taobao et Alibaba. Établissez votre contrat en ligne et suivez votre expédition sur WhatsApp.</p>
+                
+                <div class="hero-btns">
+                    <a href="#commande-chine" class="btn btn-primary">
+                        <i class="fa-solid fa-file-signature"></i> Établir un Contrat Chine
+                    </a>
+                    <button onclick="openDirectChinaWhatsApp()" class="btn btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp" style="font-size: 1.25rem;"></i> Discuter sur WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tableau de bord logistique visuel -->
+            <div class="hero-visual">
+                <div class="route-header">
+                    <span style="font-weight: 700; font-size: 0.9rem;"><i class="fa-solid fa-satellite-dish" style="color: var(--accent-primary);"></i> Corridor Logistique Actif</span>
+                    <span class="route-badge">Transit Sécurisé</span>
+                </div>
+
+                <div class="route-visual-bar">
+                    <div class="city-node">
+                        <div class="city-code">CAN</div>
+                        <div class="city-name">Guangzhou, Chine</div>
+                    </div>
+                    <div class="flight-track">
+                        <div class="flight-line"></div>
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <div class="city-node">
+                        <div class="city-code">BZV</div>
+                        <div class="city-name">Brazzaville, Congo</div>
+                    </div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <div class="stat-info">
+                        <h4>Contrat de Commande Officiel</h4>
+                        <p>Devis transparent en FCFA avant tout paiement.</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-warehouse"></i></div>
+                    <div class="stat-info">
+                        <h4>Réception & Contrôle Entrepôt</h4>
+                        <p>Vérification de vos colis à Guangzhou avant expédition.</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="stat-info">
+                        <h4>Assistance Directe 7j/7</h4>
+                        <p>Ligne directe : +242 06 842 46 24</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANDEAU PLATEFORMES CHINOISES (SWIPEABLE SUR MOBILE) -->
+    <div class="platforms-strip">
+        <div class="container platforms-flex">
+            <span class="platforms-label">Sourcing sur toutes les plateformes :</span>
+            <div class="platform-pills">
+                <div class="platform-pill"><i class="fa-solid fa-bag-shopping"></i> Pinduoduo</div>
+                <div class="platform-pill"><i class="fa-solid fa-industry"></i> 1688.com</div>
+                <div class="platform-pill"><i class="fa-solid fa-globe"></i> Alibaba</div>
+                <div class="platform-pill"><i class="fa-solid fa-cart-shopping"></i> Taobao</div>
+                <div class="platform-pill"><i class="fa-solid fa-microchip"></i> Huaqiangbei</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION COMMANDE EN CHINE & CONTRAT -->
+    <section id="commande-chine" class="section">
+        <div class="container china-wrapper">
+            <div>
+                <div class="live-status-pill" style="margin-bottom: 16px;">
+                    <i class="fa-solid fa-ship" style="color: var(--accent-primary);"></i>
+                    <span>Processus d'Importation Clé en Main</span>
+                </div>
+                <h2 style="font-size: clamp(1.85rem, 3.5vw, 2.5rem); font-weight: 900; line-height: 1.2; margin-bottom: 16px;">Comment lancer votre commande en Chine ?</h2>
+                <p style="color: var(--text-muted);">Que vous souhaitiez commander un article précis ou approvisionner votre boutique en gros, notre équipe gère l'achat auprès du fournisseur, le groupage et la douane jusqu'à Brazzaville.</p>
+
+                <div class="china-steps">
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <div>
+                            <h4>Partagez le produit ou le lien</h4>
+                            <p style="font-size: 0.88rem; color: var(--text-muted);">Indiquez-nous l'article recherché, une capture d'écran ou le lien fournisseur avec la quantité.</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <div>
+                            <h4>Signature du Contrat de Commande</h4>
+                            <p style="font-size: 0.88rem; color: var(--text-muted);">Validation du prix d'achat, du mode de transport (Aérien ou Maritime) et des délais de livraison.</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">3</div>
+                        <div>
+                            <h4>Expédition & Réception à Brazzaville</h4>
+                            <p style="font-size: 0.88rem; color: var(--text-muted);">Suivi régulier de l'acheminement jusqu'à la remise de votre marchandise.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="openDirectChinaWhatsApp()" class="btn btn-whatsapp" style="width: 100%; font-size: 1rem;">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 1.35rem;"></i> Contacter sur WhatsApp pour le Contrat
+                </button>
+            </div>
+
+            <!-- Formulaire Générateur de Contrat WhatsApp -->
+            <div class="china-contract-box">
+                <h3><i class="fa-solid fa-file-contract" style="color: var(--accent-primary);"></i> Préparer mon Contrat</h3>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 22px;">Remplissez ces informations pour transmettre instantanément votre dossier de commande sur notre WhatsApp.</p>
+
+                <form id="china-form" onsubmit="submitChinaContract(event)">
+                    <div class="form-group">
+                        <label>Nom & Prénom ou Entreprise *</label>
+                        <input type="text" id="china-name" class="form-control" placeholder="Ex: Mberi Prince / Boutique..." required>
+                    </div>
+                    <div class="form-group">
+                        <label>Article(s) ou Lien(s) fournisseur *</label>
+                        <input type="text" id="china-product" class="form-control" placeholder="Ex: 20 rubans LED, accessoires téléphone, lien..." required>
+                    </div>
+                    <div class="form-group">
+                        <label>Quantité estimée *</label>
+                        <input type="text" id="china-qty" class="form-control" placeholder="Ex: 10 pièces / 2 cartons..." required>
+                    </div>
+                    <div class="form-group">
+                        <label>Option de Transit souhaitée</label>
+                        <select id="china-shipping" class="form-control">
+                            <option value="Cargo Aérien Express (7 à 14 jours)">Cargo Aérien Express (7 à 14 jours)</option>
+                            <option value="Cargo Maritime (45 à 60 jours - Gros volumes)">Cargo Maritime (45 à 60 jours - Gros volumes)</option>
+                            <option value="À conseiller selon le poids">À conseiller selon le poids</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Précisions supplémentaires (Optionnel)</label>
+                        <textarea id="china-notes" rows="2" class="form-control" placeholder="Couleurs, modèles, budget cible..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1rem;">
+                        <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Générer & Envoyer sur WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION GARANTIES (CARROUSEL SWIPEABLE SUR MOBILE) -->
+    <section id="garanties" class="section" style="padding-top: 20px;">
+        <div class="container">
+            <div style="text-align: center; max-width: 650px; margin: 0 auto 36px;">
+                <h2 style="font-size: clamp(1.7rem, 3vw, 2.3rem); font-weight: 800; margin-bottom: 10px;">Pourquoi choisir <span style="color: var(--accent-primary);">Hiram Web</span> ?</h2>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Une structure pensée pour éliminer les risques liés aux achats internationaux.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4>Sécurité Contractuelle</h4>
+                    <p>Chaque commande fait l'objet d'un accord clair détaillant les quantités, le coût global et les engagements de livraison.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-magnifying-glass-dollar"></i></div>
+                    <h4>Prix Direct Fournisseur</h4>
+                    <p>Accédez aux tarifs réels des plateformes chinoises sans intermédiaires inutiles pour maximiser vos marges.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h4>Suivi Réactif par WhatsApp</h4>
+                    <p>Un interlocuteur unique disponible au +242 06 842 46 24 pour vous informer à chaque étape du transit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#accueil" class="brand-logo" style="margin-bottom: 14px;">
+                        <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+                        Hiram <span>Web</span>
+                    </a>
+                    <p>Votre partenaire de confiance à Brazzaville pour le sourcing, l'achat en Chine et l'acheminement sécurisé de vos marchandises.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#commande-chine">Commander en Chine</a></li>
+                        <li><a href="#garanties">Nos Garanties</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Direct</h4>
+                    <ul>
+                        <li><i class="fa-brands fa-whatsapp" style="color: var(--accent-whatsapp);"></i> WhatsApp : <strong>+242 06 842 46 24</strong></li>
+                        <li><i class="fa-solid fa-location-dot" style="color: var(--accent-primary);"></i> Brazzaville, République du Congo</li>
+                        <li><i class="fa-solid fa-clock" style="color: var(--accent-primary);"></i> Lun - Sam : 08h00 - 20h00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; <span id="year"></span> <strong>Hiram Web</strong>. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOUTON FLOTTANT WHATSAPP (DESKTOP) -->
+    <a href="https://wa.me/242068424624?text=Bonjour%20Hiram%20Web%2C%20je%20souhaite%20avoir%20des%20informations%20pour%20une%20commande%20en%20Chine." target="_blank" class="floating-wa" title="Discuter sur WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- BARRE DE NAVIGATION NATIVE MOBILE (APP DOCK) -->
+    <nav class="mobile-app-dock" aria-label="Navigation Mobile">
+        <a href="#accueil" class="dock-item active" onclick="setActiveDock(this)">
+            <i class="fa-solid fa-house"></i>
+            <span>Accueil</span>
+        </a>
+        <a href="#commande-chine" class="dock-item" onclick="setActiveDock(this)">
+            <i class="fa-solid fa-file-signature"></i>
+            <span>Contrat</span>
+        </a>
+        <button onclick="openDirectChinaWhatsApp()" class="dock-wa-center" aria-label="Contacter sur WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </button>
+        <a href="#garanties" class="dock-item" onclick="setActiveDock(this)">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Garanties</span>
+        </a>
+        <a href="#contact" class="dock-item" onclick="setActiveDock(this)">
+            <i class="fa-solid fa-headset"></i>
+            <span>Contact</span>
+        </a>
+    </nav>
+
+    <script>
+        // =========================================
+        // CONFIGURATION WHATSAPP HIRAM WEB
+        // =========================================
+        const WHATSAPP_NUMBER = "242068424624";
+
+        // Contact direct pour contrat Chine
+        function openDirectChinaWhatsApp() {
+            const msg = `🇨🇳 *DEMANDE DE CONTRAT DE COMMANDE CHINE - HIRAM WEB*\n\nBonjour Hiram Web, je souhaite passer une commande en Chine et établir un contrat avec vous.`;
+            const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+            window.open(url, '_blank');
+        }
+
+        // Soumission du formulaire de contrat vers WhatsApp
+        function submitChinaContract(e) {
+            e.preventDefault();
+            const name = document.getElementById('china-name').value.trim();
+            const product = document.getElementById('china-product').value.trim();
+            const qty = document.getElementById('china-qty').value.trim();
+            const shipping = document.getElementById('china-shipping').value;
+            const notes = document.getElementById('china-notes').value.trim() || "Aucune précision supplémentaire";
+
+            let msg = `🇨🇳 *NOUVEAU DOSSIER CONTRAT CHINE - HIRAM WEB*\n`;
+            msg += `━━━━━━━━━━━━━━━━━━━━\n`;
+            msg += `👤 *Client :* ${name}\n`;
+            msg += `📦 *Produit(s) :* ${product}\n`;
+            msg += `🔢 *Quantité :* ${qty}\n`;
+            msg += `✈️ *Transit souhaité :* ${shipping}\n`;
+            msg += `📝 *Détails :* ${notes}\n`;
+            msg += `━━━━━━━━━━━━━━━━━━━━\n`;
+            msg += `Merci de m'établir le devis et le contrat de commande.`;
+
+            const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+            window.open(url, '_blank');
+        }
+
+        // Gestion de l'état actif sur la barre mobile
+        function setActiveDock(element) {
+            document.querySelectorAll('.dock-item').forEach(item => item.classList.remove('active'));
+            element.classList.add('active');
+        }
+
+        // Année dynamique dans le footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
